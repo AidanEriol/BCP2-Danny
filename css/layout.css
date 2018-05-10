@@ -1,18 +1,13 @@
 body {
-  background-image: url("../images/background1.jpg");
+  background-image: url("../images/background2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
 }
 
 h1 {
   text-align: right;
   font-family: "Patrick Hand SC", cursive;
   color: rgba(255,200,0,0.6);
-}
-
-h2 {
-
 }
 
 ul {
