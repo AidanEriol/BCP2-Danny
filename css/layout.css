@@ -8,6 +8,16 @@ h1 {
   text-align: right;
   font-family: "Patrick Hand SC", cursive;
   color: rgba(255,200,0,0.6);
+  float: left;
+  padding-left: 15px;
+}
+
+#profile-pic {
+  background-image: url("../images/stand-in-portrait.jpg");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 ul {
@@ -15,6 +25,11 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-align: right;
+}
+
+li {
+  /* display: inline-block; */
 }
 
 a {
