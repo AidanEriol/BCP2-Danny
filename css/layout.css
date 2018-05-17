@@ -68,10 +68,10 @@ a {
    }
    &:hover {
         &:before {
-            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
         }
         &:after {
-            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
         }
     }
 }
