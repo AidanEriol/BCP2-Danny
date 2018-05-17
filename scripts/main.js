@@ -2,8 +2,9 @@
 
 var projects = [];
 
-function Projects(rawDataObject) {
-  this.projectName = rawDataObject.projectName;
-  this.projectInfo = rawDataObject.projectInfo;
-  this.finishedDate = rawDataObject.finishedDate;
+ var newProject = function(projectName, projectInfo, projectPhoto, finishedDate) {
+  this.projectName = projectName;
+  this.projectInfo = projectInfo;
+  this.projectPhoto = projectPhoto;
+  this.finishedDate = finishedDate;
 }
