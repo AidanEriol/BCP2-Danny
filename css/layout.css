@@ -1,28 +1,41 @@
-body {
-  background-image: url("../images/background2.jpg");
+header {
+  height: 500px;
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: auto;
+  background-size: 100%;
 }
 
 h1 {
   font-family: "Patrick Hand SC", cursive;
   font-size: 45px;
-  color: rgba(253,236,1,0.6);
+  color: rgba(255,255,255);
   padding-top: 15px;
   text-align: right;
 }
 
-#profile-pic {
-  background-image: url("../images/stand-in-portrait.jpg");
-  background-size: cover;
-  float: left;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 2px dotted rgba(253,236,1,0.8);
+.sideNav {
+  width: 125px;
+
 }
 
-#profile-pic h1 {
+.sideNav a {
+  text-align: center;
+  padding: 12px;
+  color: white;
+  font-size: 24px;
+  transition: all 0.4s ease;
+}
+
+.sideNav a:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active {
+  background-color: rgba(191,63,169,0.7);
+}
+
+h1 {
   text-align: right;
 }
 
@@ -42,52 +55,12 @@ ul {
   text-align: right;
 }
 
-a {
+ul li a {
+  color: rgba(255,255,255,1);
   text-decoration: none;
-  color: rgba(255,255,255,0.7);
-  animation-name: glitchy;
-  animation-duration: 5s;
+
 }
 
-.glitch {
-  color: rgba(255,255,255,0.7);
-  &:before; &:after {
-       display: block;
-       position: absolute;
-       top: 0;
-       left: 0;
-       height: 100%;
-       width: 100%;
-       opacity: .8;
-   } &:after {
-       color: #f0f;
-       z-index: -2;
-   } &:before {
-       color: #0ff;
-       z-index: -1;
-   }
-   &:hover {
-        &:before {
-            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
-        }
-        &:after {
-            animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
-        }
-    }
-}
-}
-
-p {
-  border: 2px solid rgba(255,255,255,0.6);
-  background-color: rgba(255,255,255,0.4);
-  text-align: center;
-}
-
-/* shout out to ihatetomatoes.net */
-@keyframes glitchy {
-  0%   {transform: translate(-2px, 2px);}
-  25%  {transform: translate(-2px, -2px);}
-  50%  {transform: translate(2px, 2px);}
-  75%  {transform: translate(2px, -2px);}
-  100%  {transform: translate(-2px, 2px);}
+ul li a:hover {
+  background-color: rgba(191,63,169,0.7);
 }

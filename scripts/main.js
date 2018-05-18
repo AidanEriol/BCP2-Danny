@@ -1,5 +1,9 @@
 'use strict'
 
+$(document).on('click', function(event) {
+  event.preventDefault();
+});
+
 var projects = [];
 
  function Project(rawDataObject) {
@@ -9,7 +13,7 @@ var projects = [];
   this.finishedDate = rawDataObject.finishedDate;
 }
 
-newProject.prototype.toHtml = function() {
+Project.prototype.toHtml = function() {
   var $addProject = $('.template').clone();
   $newProject.removeClass('template');
   $newProject.find('h1').html(this.projectName);
@@ -28,3 +32,8 @@ completedProjects.forEach(function(projectObject) {
 projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
+
+$('.sideBtn').click(function() {
+   $('.sideNav').toggleClass('active');
+   $('.sideBtn').toggleClass('toggle');
+ });
