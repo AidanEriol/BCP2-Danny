@@ -1,5 +1,9 @@
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .icon-menu {
     display: none;
+  }
+  .sideNav {
+    display: block;
+    float: right;
   }
 }
