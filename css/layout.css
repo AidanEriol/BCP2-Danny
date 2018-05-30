@@ -62,3 +62,13 @@ ul li a {
 ul li a:hover {
   background-color: rgba(191,63,169,0.7);
 }
+
+#main-menu {
+  position: relative;
+  left: 45%;
+  transition: all 0.4s ease;
+}
+
+#menu-toggler:checked + #main-menu {
+  left: 0;
+}
