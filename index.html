@@ -9,12 +9,19 @@
   </head>
     <body>
     <header>
-      <div id="profile-pic"></div>
-      <h1>IT'S DANNY</h1>
+      <div id="header-box">
+        <h1>IT'S DANNY</h1>
+        <div class="icon-menu">
+
+        </div>
+      </div>
       <nav>
-        <a href="#" class="sideNav">
-        </a>
         <ul id="main-menu">
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT DANNY</a></li>
           <li><a href="#">WHAT DANNY HAS DONE</a></li>
@@ -27,8 +34,12 @@
         <article id="about">
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
         </article>
-        <article id="project-info">
-            <p>The guy runs a prison, he can have any piece of ass he wants. It's a wonderful restaurant! Chickens don't clap! It's one banana Michael, what could it cost, ten dollars? I've made a huge tiny mistake. Oh Gob, you could charm the black off a telegram boy. Coo coo ca chaw. Coo coo ca chaw. Coo coo ca chaw. Family Love Michael.</p>
+        <section id="project-info">
+          <h1>Projects!</h1>
+        <article class="template" data-category="cat">
+          <img class="projectPhoto" src="" alt="">
+          <h2 class="name"></h2>
+          <p class="description"></p>
         </article>
         <article id="contact-info">
             <ul id="social-links">
@@ -37,11 +48,13 @@
                 <li><a href="https://www.linkedin.com/in/daniel-rogers-28228a158/" target="_blank">linkedin</a></li>
             </ul>
         </article>
+      </section>
     </main>
     <footer>
        <p>&rarr;Danny Danger&trade;</p>
     </footer>
-    <script src="scripts/main.js"></script>
     <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/projectData.js"></script>
+    <script src="scripts/main.js"></script>
     </body>
 </html>
