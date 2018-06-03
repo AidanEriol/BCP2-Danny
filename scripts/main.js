@@ -29,6 +29,6 @@ projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
 
-function myFunction(x) {
+function menuSlide(x) {
     x.classList.toggle("change");
 }
