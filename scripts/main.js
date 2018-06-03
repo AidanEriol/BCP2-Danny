@@ -22,7 +22,7 @@ Project.prototype.toHtml = function() {
 }
 
 rawData.forEach(function(projectObject) {
-  projects.push(new newProject(projectObject));
+  projects.push(new Project(projectObject));
 });
 
 projects.forEach(function(project) {

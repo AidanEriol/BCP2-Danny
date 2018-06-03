@@ -11,22 +11,19 @@
     <header>
       <div id="header-box">
         <h1>IT'S DANNY</h1>
-        <div class="icon-menu">
-
-        </div>
       </div>
       <nav>
+        <div class="container" onclick="myFunction(this)">
         <ul id="main-menu">
-          <div class="container" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-          </div>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT DANNY</a></li>
-          <li><a href="#">WHAT DANNY HAS DONE</a></li>
-          <li><a href="#">CONTACT THE DANNY</a></li>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/about">ABOUT DANNY</a></li>
+          <li><a href="/progress">WHAT DANNY HAS DONE</a></li>
+          <li><a href="/contactMe">CONTACT THE DANNY</a></li>
         </ul>
+      </div>
       </nav>
     </header>
 
@@ -34,23 +31,23 @@
         <article id="about">
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
         </article>
-        <section id="project-info">
-          <h1>Projects!</h1>
+        <h1>Projects!</h1>
+        <section id="projects">
         <article class="template" data-category="cat">
           <img class="projectPhoto" src="" alt="">
           <h2 class="name"></h2>
           <p class="description"></p>
         </article>
-        <article id="contact-info">
-            <ul id="social-links">
-                <li><a href="https://www.facebook.com/danny.rogers.146612" target="_blank">Facebook</a></li>
-                <li><a href="https://github.com/AidanEriol" target="_blank">github</a></li>
-                <li><a href="https://www.linkedin.com/in/daniel-rogers-28228a158/" target="_blank">linkedin</a></li>
-            </ul>
-        </article>
       </section>
     </main>
     <footer>
+      <article id="contact-info">
+        <ul id="social-links">
+          <li><a href="https://www.facebook.com/danny.rogers.146612" target="_blank">Facebook</a></li>
+          <li><a href="https://github.com/AidanEriol" target="_blank">github</a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-rogers-28228a158/" target="_blank">linkedin</a></li>
+        </ul>
+      </article>
        <p>&rarr;Danny Danger&trade;</p>
     </footer>
     <script src="scripts/jquery-3.3.1.min.js"></script>
