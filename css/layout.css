@@ -1,5 +1,4 @@
 header {
-  height: 400px;
   background-image: url("../images/background3.jpg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -49,7 +48,8 @@ p {
 }
 
 img {
-  height: 400px;
+  /* height: 400px; */
+  max-width: 100%;
   border: 5px solid rgba(0,0,65,0.8);
 }
 
@@ -63,29 +63,34 @@ img {
   text-align: right;
 }
 
-ul {
-  font-family: "Gaegu", cursive;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+button {
   text-align: right;
 }
 
-ul li a {
-  color: rgba(255,255,255,1);
-  text-decoration: none;
+.icon-menu {
+  width: 100%;
+  overflow: auto;
+  display: none;
+  /* background-color:  */
 }
 
-ul li a:hover {
+.icon-menu a {
+  font-family: "Gaegu", cursive;
+  list-style-type: none;
+  float: right;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 20%;
+  transition: all 0.4s ease;
+  color: white;
+  font-size: 16px;
+}
+
+.icon-menu a:hover {
   background-color: rgba(191,63,169,0.7);
 }
 
-#main-menu {
-  position: relative;
-  left: 45%;
-  transition: all 0.4s ease;
-}
-
-#menu-toggler:checked + #main-menu {
-  left: 0;
-}
+/* .active {
+  background-color:
+} */

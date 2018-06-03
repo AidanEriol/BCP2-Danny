@@ -2,6 +2,12 @@
 
 var projects = [];
 
+$(document).ready(function() {
+  $("button").click(function() {
+    $(".icon-menu").toggle("fast");
+  });
+});
+
  function Project(rawDataObject) {
   this.projectName = rawDataObject.projectName;
   this.projectInfo = rawDataObject.projectInfo;
@@ -28,7 +34,3 @@ rawData.forEach(function(projectObject) {
 projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 });
-
-function menuSlide(x) {
-    x.classList.toggle("change");
-}

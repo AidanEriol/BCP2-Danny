@@ -8,23 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Gaegu|Patrick+Hand+SC|Amatic+SC" rel="stylesheet">
   </head>
+
     <body>
     <header>
       <div id="header-box">
         <h1>IT'S DANNY</h1>
       </div>
       <nav>
-        <div id="menu" onclick="menuSlide(this)">
-        <ul id="main-menu">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          <li><a href="/">HOME</a></li>
-          <li><a href="/about" data-tab="about">ABOUT DANNY</a></li>
-          <li><a href="/projects" data-tab="projects">WHAT DANNY HAS DONE</a></li>
-          <li><a href="/contactMe" data-tab="contactMe">CONTACT THE DANNY</a></li>
-        </ul>
-      </div>
+        <button>menu</button>
+        <div class="icon-menu">
+          <a class="active" href="#">
+          <a href="/">HOME</a>
+          <a href="/about" data-tab="about">ABOUT DANNY</a>
+          <a href="/projects" data-tab="projects">WHAT DANNY HAS DONE</a>
+          <a href="/contactMe" data-tab="contactMe">CONTACT THE DANNY</a>
+        </div>
       </nav>
     </header>
 
@@ -32,7 +30,7 @@
         <article id="about" class="tab-content">
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
         </article>
-        <section id="extraSpace"></section>
+        <div id="extraSpace"></div>
         <section id="projects">
           <h1>Projects!</h1>
         <article class="template" data-category="cat">
