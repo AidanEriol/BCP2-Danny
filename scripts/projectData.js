@@ -17,7 +17,7 @@ var rawData = [
 
   {
     projectName:   "Thirsty Thistles",
-    projectInfo:   "A group project that helps track when to water certain plants. Resets every Sunday with a built-in function to demonstrate the resetability.",
+    projectInfo:   "A group project that helps track when to water certain plants. Resets every Sunday with a built-in function to demonstrate the resetability. In addition to contributing to the coding in the project, I drew the clickable icons for the website.",
     projectPhoto:  "images/thirsty-thistles.png",
     finishedDate:  "03/25/2018"
   },
