@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Danny Danger's Dangerous Page</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Gaegu|Patrick+Hand+SC|Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
   </head>
 
     <body>
@@ -15,23 +15,24 @@
         <h1>IT'S DANNY</h1>
       </div>
       <nav>
-        <button>menu</button>
-        <div class="icon-menu">
-          <a class="active" href="#">
-          <a href="/">HOME</a>
-          <a href="/about" data-tab="about">ABOUT DANNY</a>
-          <a href="/projects" data-tab="projects">WHAT DANNY HAS DONE</a>
-          <a href="/contactMe" data-tab="contactMe">CONTACT THE DANNY</a>
+        <button></button>
+        <div id="icon-menu">
+          <a href="/" class="tab">HOME</a>
+          <a href="#" class="tab" data-content="about">ABOUT DANNY</a>
+          <a href="#" class ="tab" data-content="projects">WHAT DANNY HAS DONE</a>
+          <a href="#" class="tab" data-content="contactMe">CONTACT THE DANNY</a>
         </div>
       </nav>
     </header>
 
     <main>
-        <article id="about" class="tab-content">
+      <section id="about" class="tab-content"
+        <article class="template" data-category="cat">
           <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
         </article>
+      </section>
         <div id="extraSpace"></div>
-        <section id="projects">
+        <section id="projects" class="tab-content">
           <h1>Projects!</h1>
         <article class="template" data-category="cat">
           <h2 class="name"></h2>
@@ -39,9 +40,8 @@
           <p class="description"></p>
         </article>
       </section>
-    </main>
-    <footer>
-      <article id="contact-info">
+      <section id="contact-info" class="tab-content">
+      <article>
         <ul id="social-links">
           <li><a href="https://www.facebook.com/danny.rogers.146612" target="_blank" class="icon-social-facebook"> Facebook</a></li>
           <li><a href="https://www.twitter.com/AidanEriol" target="_blank" class="icon-social-twitter"> Twitter</a></li>
@@ -49,10 +49,14 @@
           <li><a href="https://www.linkedin.com/in/daniel-rogers-28228a158/" target="_blank" class="icon-social-linkedin"> linkedin</a></li>
         </ul>
       </article>
+    </section>
+    </main>
+    <footer>
        <p>&rarr;Danny Danger&trade;</p>
     </footer>
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/projectData.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/pageView.js"></script>
     </body>
 </html>

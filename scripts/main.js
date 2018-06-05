@@ -4,7 +4,7 @@ var projects = [];
 
 $(document).ready(function() {
   $("button").click(function() {
-    $(".icon-menu").toggle("fast");
+    $("#icon-menu").toggle("fast");
   });
 });
 

@@ -1,30 +1,10 @@
 header {
+  max-height: 30%;
   background-image: url("../images/background3.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto;
   background-size: 100%;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: rgba(255,255,222,0.7);
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  overflow: hidden;
 }
 
 body {
@@ -35,13 +15,13 @@ h1, h2 {
   font-family: "Patrick Hand SC", cursive;
   font-size: 45px;
   color: rgba(255,255,255);
-  padding-top: 15px;
+  /* padding-top: 15px; */
   text-align: right;
 }
 
 p {
   font-family: "Amatic SC", cursive;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
   color: rgba(255,255,255,0.6);
 
@@ -49,6 +29,7 @@ p {
 
 img {
   /* height: 400px; */
+  align-content: center;
   max-width: 100%;
   border: 5px solid rgba(0,0,65,0.8);
 }
@@ -67,14 +48,22 @@ button {
   text-align: right;
 }
 
-.icon-menu {
+#contact-info a {
+  display: inline;
+  font-family: "Gaegu", cursive;
+  font-size: 25px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#icon-menu {
   width: 100%;
   overflow: auto;
   display: none;
   /* background-color:  */
 }
 
-.icon-menu a {
+#icon-menu a {
   font-family: "Gaegu", cursive;
   list-style-type: none;
   float: right;
@@ -87,7 +76,7 @@ button {
   font-size: 16px;
 }
 
-.icon-menu a:hover {
+#icon-menu a:hover {
   background-color: rgba(191,63,169,0.7);
 }
 
